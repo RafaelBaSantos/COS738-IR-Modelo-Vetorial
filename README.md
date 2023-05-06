@@ -1,6 +1,7 @@
-# Implementação de Um Sistema de Recuperação Em Memória Segundo o Modelo Vetorial
+# Avaliacao de um Modelo de RI
 
 Esse repositório contém os arquivos referentes a um trabalho da cadeira de Busca e Mineração de Texto.
+Essa branch contém, além dos modelo de IR, a comparação do modelo com ou sem o uso do stemmer de Porter.
 
 ### Instalação via Pipenv
 
