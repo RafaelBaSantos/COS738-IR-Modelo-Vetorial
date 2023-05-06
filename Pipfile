@@ -8,6 +8,8 @@ numpy = "*"
 ordereddict = "*"
 pandas = "*"
 lxml = "*"
+nltk = "*"
+seaborn = "*"
 
 [dev-packages]
 

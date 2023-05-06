@@ -1,6 +1,6 @@
 import pandas as pd
 from configparser import ConfigParser
-from utils import tf, count_in_list
+from utils import tf, count_in_list, stem
 import logging
 import time
 
@@ -12,13 +12,20 @@ class RealizarConsultas:
 
         config = ConfigParser()
         config.read(r'.\config\BUSCA.CFG')
-
         self.MODELO = config.get("busca", 'MODELO')
         self.MODELO_W = config.get("busca", 'MODELO_W')
         self.CONSULTAS = config.get("busca", 'CONSULTAS')
-        self.RESULTADOS = config.get("busca", 'RESULTADOS')
+        self.RESULTADOS_DIR = config.get("busca", 'RESULTADOS_DIR')
+
+        config = ConfigParser()
+        config.read(r'.\config\STEM.CFG')
+        self.STEM = config.get("stem", 'STEM')
 
         logging.info("Realizar Consultas - Arquivos de configuração lidos")
+        if self.STEM == "STEMMER":
+            logging.info("Realizar Consultas - STEMMER ativado")
+        else:
+            logging.info("Realizar Consultas - STEMMER desativado")
 
         self.df_scores_all = pd.DataFrame([])
 
@@ -44,6 +51,9 @@ class RealizarConsultas:
 
             query_text = query_text.split()
             query_text = [txt for txt in query_text if len(txt) >= 2]
+
+            if self.STEM == "STEMMER":
+                query_text = stem(query_text)
 
             count_termos = count_in_list(query_text)
 
@@ -89,7 +99,10 @@ class RealizarConsultas:
         logging.info("Gerador do Modelo - Foram lidos " + str(df_consultas.shape[0]+1) + " records")
 
     def export(self):
-        self.df_scores_all.to_csv(self.RESULTADOS, index=False, sep=";")
+        if self.STEM == "STEMMER":
+            self.df_scores_all.to_csv(self.RESULTADOS_DIR + r"\RESULTADOS-STEMMER.csv", index=False, sep=";")
+        else:
+            self.df_scores_all.to_csv(self.RESULTADOS_DIR + r"\RESULTADOS-NOSTEMMER.csv", index=False, sep=";")
 
 
 if __name__ == "__main__":

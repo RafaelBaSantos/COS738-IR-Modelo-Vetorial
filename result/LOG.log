@@ -1,21 +1,66 @@
-INFO:root:Início das operações - Datetime: 2023-05-06 11:42:47.581320
+INFO:root:Início das operações - Datetime: 2023-05-06 15:02:52.244866
 INFO:root:Processador de Consultas - Início
 INFO:root:Processador de Consultas - Arquivos de configuração lidos
-INFO:root:Processador de Consultas - Dados lidos em 0.035005807876586914s
+INFO:root:Processador de Consultas - Dados lidos em 0.034998178482055664s
 INFO:root:Processador de Consultas - Foram lidas 100 consultas
-INFO:root:Processador de Consultas - Consultas processadas com sucesso em 0.07969117164611816s
+INFO:root:Processador de Consultas - Consultas processadas com sucesso em 0.06399726867675781s
 INFO:root:Gerador de Lista Invertida - Início
 INFO:root:Gerador de Lista Invertida - Arquivos de configuração lidos
-INFO:root:Gerador de Lista Invertida - Dados lidos em 0.2594187259674072s
+INFO:root:Gerador de Lista Invertida - Dados lidos em 0.4144759178161621s
 INFO:root:Gerador de Lista Invertida - Foram lidos 1240 records
-INFO:root:Gerador de Lista Invertida - Lista Invertida processadas com sucesso em 5.536114931106567s
+INFO:root:Gerador de Lista Invertida - Lista Invertida processadas com sucesso em 7.405892610549927s
 INFO:root:Gerador do Modelo - Início
 INFO:root:Gerador do Modelo - Arquivos de configuração lidos
-INFO:root:Gerador do Modelo - Dados lidos em 0.05118560791015625s
-INFO:root:Gerador do Modelo - Foram lidos 9385 records
-INFO:root:Gerador do Modelo - Modelo processado com sucesso em 4.037161350250244s
+INFO:root:Gerador do Modelo - Dados lidos em 0.05200457572937012s
+INFO:root:Gerador do Modelo - Foram lidos 6502 records
+INFO:root:Gerador do Modelo - Modelo processado com sucesso em 3.52319598197937s
 INFO:root:Realizar Consultas - Início
 INFO:root:Realizar Consultas - Arquivos de configuração lidos
-INFO:root:Realizar Consultas - Dados lidos em 0.1105504035949707s
+INFO:root:Realizar Consultas - STEMMER ativado
+INFO:root:Realizar Consultas - Dados lidos em 0.1009986400604248s
 INFO:root:Gerador do Modelo - Foram lidos 100 records
-INFO:root:Realizar Consultas - Consultas processados com sucesso em 7.809813976287842s
+INFO:root:Realizar Consultas - Consultas processados com sucesso em 7.349065542221069s
+INFO:root:Início das operações - Datetime: 2023-05-06 15:04:40.877671
+INFO:root:Processador de Consultas - Início
+INFO:root:Processador de Consultas - Arquivos de configuração lidos
+INFO:root:Processador de Consultas - Dados lidos em 0.02399921417236328s
+INFO:root:Processador de Consultas - Foram lidas 100 consultas
+INFO:root:Processador de Consultas - Consultas processadas com sucesso em 0.048993587493896484s
+INFO:root:Gerador de Lista Invertida - Início
+INFO:root:Gerador de Lista Invertida - Arquivos de configuração lidos
+INFO:root:Gerador de Lista Invertida - Dados lidos em 0.3196902275085449s
+INFO:root:Gerador de Lista Invertida - Foram lidos 1240 records
+INFO:root:Gerador de Lista Invertida - Lista Invertida processadas com sucesso em 6.0914599895477295s
+INFO:root:Gerador do Modelo - Início
+INFO:root:Gerador do Modelo - Arquivos de configuração lidos
+INFO:root:Gerador do Modelo - Dados lidos em 0.05199742317199707s
+INFO:root:Gerador do Modelo - Foram lidos 9385 records
+INFO:root:Gerador do Modelo - Modelo processado com sucesso em 4.1657373905181885s
+INFO:root:Realizar Consultas - Início
+INFO:root:Realizar Consultas - Arquivos de configuração lidos
+INFO:root:Realizar Consultas - STEMMER desativado
+INFO:root:Realizar Consultas - Dados lidos em 0.16070866584777832s
+INFO:root:Gerador do Modelo - Foram lidos 100 records
+INFO:root:Realizar Consultas - Consultas processados com sucesso em 7.662191390991211s
+INFO:root:Início das operações - Datetime: 2023-05-06 15:05:13.910394
+INFO:root:Processador de Consultas - Início
+INFO:root:Processador de Consultas - Arquivos de configuração lidos
+INFO:root:Processador de Consultas - Dados lidos em 0.02399611473083496s
+INFO:root:Processador de Consultas - Foram lidas 100 consultas
+INFO:root:Processador de Consultas - Consultas processadas com sucesso em 0.04862499237060547s
+INFO:root:Gerador de Lista Invertida - Início
+INFO:root:Gerador de Lista Invertida - Arquivos de configuração lidos
+INFO:root:Gerador de Lista Invertida - Dados lidos em 0.311612606048584s
+INFO:root:Gerador de Lista Invertida - Foram lidos 1240 records
+INFO:root:Gerador de Lista Invertida - Lista Invertida processadas com sucesso em 6.878263711929321s
+INFO:root:Gerador do Modelo - Início
+INFO:root:Gerador do Modelo - Arquivos de configuração lidos
+INFO:root:Gerador do Modelo - Dados lidos em 0.04800558090209961s
+INFO:root:Gerador do Modelo - Foram lidos 6502 records
+INFO:root:Gerador do Modelo - Modelo processado com sucesso em 3.6169536113739014s
+INFO:root:Realizar Consultas - Início
+INFO:root:Realizar Consultas - Arquivos de configuração lidos
+INFO:root:Realizar Consultas - STEMMER ativado
+INFO:root:Realizar Consultas - Dados lidos em 0.10100960731506348s
+INFO:root:Gerador do Modelo - Foram lidos 100 records
+INFO:root:Realizar Consultas - Consultas processados com sucesso em 7.80617880821228s

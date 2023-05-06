@@ -1,7 +1,7 @@
 import pandas as pd
 from lxml import etree
-from configparser import RawConfigParser
-from utils import tratar_texto, MultiOrderedDict, count_in_list
+from configparser import RawConfigParser, ConfigParser
+from utils import tratar_texto, MultiOrderedDict, count_in_list, stem
 import logging
 import time
 
@@ -13,11 +13,14 @@ class GeradorListaInvertida:
 
         config = RawConfigParser(dict_type=MultiOrderedDict, strict=False)
         config.read(r'.\config\GLI.CFG')
-
         self.LEIA = config.get("gli", 'LEIA').split("\n")
         self.ESCREVA_LI = config.get("gli", 'ESCREVA_LI')
         self.ESCREVA_N_D_T_MAX = config.get("gli", 'ESCREVA_N_D_T_MAX')
         self.ESCREVA_RECORDS = config.get("gli", 'ESCREVA_RECORDS')
+
+        config = ConfigParser()
+        config.read(r'.\config\STEM.CFG')
+        self.STEM = config.get("stem", 'STEM')
 
         logging.info("Gerador de Lista Invertida - Arquivos de configuração lidos")
 
@@ -72,6 +75,9 @@ class GeradorListaInvertida:
         df_records_exploded = df_records_exploded.explode("Termo")
 
         df_records_exploded = df_records_exploded[df_records_exploded["Termo"].str.len() >= 2]
+
+        if self.STEM == "STEMMER":
+            df_records_exploded["Termo"] = stem(df_records_exploded["Termo"])
 
         df_n_d_t_max = df_records_exploded.groupby(["RecordNum", "Termo"], as_index=False).size() \
             .groupby(["RecordNum"], as_index=False).max("size")

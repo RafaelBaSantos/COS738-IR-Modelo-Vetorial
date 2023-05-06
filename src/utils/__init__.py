@@ -2,13 +2,14 @@ import pandas as pd
 from collections import OrderedDict
 import numpy as np
 
+from src.porter_stemmer import PorterStemmer
 
 def tratar_texto(serie: pd.Series) -> pd.Series:
     serie_tratada = serie.str.normalize('NFKD') \
         .str.encode('ascii', errors='ignore') \
         .str.decode('utf-8') \
-        .str.upper() \
-        .replace('[^A-Z]', ' ', regex=True) \
+        .str.lower() \
+        .replace('[^a-z]', ' ', regex=True) \
         .replace(r'\s+', ' ', regex=True) \
         .str.strip()
     return serie_tratada
@@ -35,3 +36,14 @@ def tf(n, n_max) -> float:
 
 def idf(n_d: int, N_d: int) -> float:
     return np.log(N_d/n_d)
+
+
+def stem(termos) -> pd.Series:
+    p = PorterStemmer()
+
+    if type(termos) == pd.Series:
+        s_local = termos.apply(lambda termo: p.stem(termo, 0, len(termo)-1))
+    else:
+        s_local = [p.stem(termo, 0, len(termo)-1) for termo in termos]
+
+    return s_local
