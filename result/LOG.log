@@ -1,0 +1,21 @@
+INFO:root:Início das operações - Datetime: 2023-05-06 11:42:47.581320
+INFO:root:Processador de Consultas - Início
+INFO:root:Processador de Consultas - Arquivos de configuração lidos
+INFO:root:Processador de Consultas - Dados lidos em 0.035005807876586914s
+INFO:root:Processador de Consultas - Foram lidas 100 consultas
+INFO:root:Processador de Consultas - Consultas processadas com sucesso em 0.07969117164611816s
+INFO:root:Gerador de Lista Invertida - Início
+INFO:root:Gerador de Lista Invertida - Arquivos de configuração lidos
+INFO:root:Gerador de Lista Invertida - Dados lidos em 0.2594187259674072s
+INFO:root:Gerador de Lista Invertida - Foram lidos 1240 records
+INFO:root:Gerador de Lista Invertida - Lista Invertida processadas com sucesso em 5.536114931106567s
+INFO:root:Gerador do Modelo - Início
+INFO:root:Gerador do Modelo - Arquivos de configuração lidos
+INFO:root:Gerador do Modelo - Dados lidos em 0.05118560791015625s
+INFO:root:Gerador do Modelo - Foram lidos 9385 records
+INFO:root:Gerador do Modelo - Modelo processado com sucesso em 4.037161350250244s
+INFO:root:Realizar Consultas - Início
+INFO:root:Realizar Consultas - Arquivos de configuração lidos
+INFO:root:Realizar Consultas - Dados lidos em 0.1105504035949707s
+INFO:root:Gerador do Modelo - Foram lidos 100 records
+INFO:root:Realizar Consultas - Consultas processados com sucesso em 7.809813976287842s
