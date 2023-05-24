@@ -5,13 +5,13 @@ Essa branch contém, além dos modelo de IR, a comparação do modelo com ou sem
 
 ### Resultos das avaliações
 
-Foi realizada o Information Retrieval dos dados de teste com e sem o uso do stemmer de [Porter](http://tartarus.org/martin/PorterStemmer/). Os resultados foram avaliados com as métricas abaixo:
+Foi realizada o Information Retrieval dos dados de teste com e sem o uso do stemmer de [Porter](http://tartarus.org/martin/PorterStemmer/). Os resultados foram avaliados com as métricas abaixo. Valores maiores são melhores.
 
 Scatterplot precisão por revocação, onde os valores são interpolados na evocação em 10 intervalos iguais:
 
 ![Gráfico de 11 pontos](https://github.com//RafaelBaSantos/COS738-IR-Modelo-Vetorial/blob/avaliacao_ri/result/diagramas/11pontos.png?raw=true)
 
-$F_{1}$ score: Métrica de acuária dada pela média armônica da precisão e revocação
+$F_{1}$ score: Métrica de acuária dada pela média armônica da precisão e revocação.
 - Dados sem stemming: 0.2410
 - Dados com stemming: 0.2553
 
@@ -23,7 +23,7 @@ Precision@10: Métrica de precisão calculada considerando os 10 primeiros resul
 - Dados sem stemming: 0.2410
 - Dados com stemming: 0.2553
 
-Barplot de precisão por consulta:
+Barplot de precisão por consulta.
 
 ![Gráfico de 11 pontos](https://github.com//RafaelBaSantos/COS738-IR-Modelo-Vetorial/blob/avaliacao_ri/result/diagramas/R-Precision%20comparativo.png?raw=true)
 
@@ -31,19 +31,21 @@ Mean Average Precision (MAP): Média do valor da precisão para os k primeiros d
 - Dados sem stemming: 0.2530
 - Dados com stemming: 0.2711
 
-Mean Reciprocal Rank (MRR): Média de 1/K, onde K é a posição do primeiro documento relevante recuperado
+Mean Reciprocal Rank (MRR): Média de 1/K, onde K é a posição do primeiro documento relevante recuperado.
 - Dados sem stemming: 0.7958
 - Dados com stemming: 0.8344
 
-Discounted Cumulative Gain (DCG): Soma da pontuação dos documentos relevantes, ponderados pela posição do documento entre os recuperados
+Discounted Cumulative Gain (DCG): Soma da pontuação dos documentos relevantes, ponderados pela posição do documento entre os recuperados.
 - Dados sem stemming: 0.7958
 - Dados com stemming: 0.8344
 
-Normalized Discounted Cumulative Gain (N-DCG): DCG com valores normalizados pelo caminho de maior DCG possível
+Normalized Discounted Cumulative Gain (N-DCG): DCG com valores normalizados pelo caminho de maior DCG possível.
 - Dados sem stemming: 0.795875420875421
 - Dados com stemming: 0.8344276094276094
 
 Os dados e imagens utilizados nos gráficos podem ser encontrados em [/result/diagramas](https://github.com/RafaelBaSantos/COS738-IR-Modelo-Vetorial/tree/avaliacao_ri/result/diagramas).
+
+A partir das métricas estimadas, pode-se concluir que o stemming é eficaz ao melhorar a recuperação de documentos relevantes.
 
 
 ### Instalação via Pipenv
