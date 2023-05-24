@@ -25,7 +25,7 @@ Precision@10: Métrica de precisão calculada considerando os 10 primeiros resul
 
 Barplot de precisão por consulta:
 
-![Gráfico de 11 pontos](https://github.com//RafaelBaSantos/COS738-IR-Modelo-Vetorial/blob/avaliacao_ri/result/diagramas/R-Precision comparativo.png?raw=true)
+![Gráfico de 11 pontos](https://github.com//RafaelBaSantos/COS738-IR-Modelo-Vetorial/blob/avaliacao_ri/result/diagramas/R-Precision%20comparativo.png?raw=true)
 
 Mean Average Precision (MAP): Média do valor da precisão para os k primeiros documentos recuperados, calculados nos pontos onde um documento relevante é recuperado.
 - Dados sem stemming: 0.2530
