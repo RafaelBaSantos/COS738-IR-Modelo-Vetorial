@@ -64,3 +64,17 @@ INFO:root:Realizar Consultas - STEMMER ativado
 INFO:root:Realizar Consultas - Dados lidos em 0.10100960731506348s
 INFO:root:Gerador do Modelo - Foram lidos 100 records
 INFO:root:Realizar Consultas - Consultas processados com sucesso em 7.80617880821228s
+INFO:root:Início das operações - Datetime: 2023-05-23 20:23:07.193424
+INFO:root:Processador de Consultas - Início
+INFO:root:Processador de Consultas - Arquivos de configuração lidos
+INFO:root:Processador de Consultas - Dados lidos em 0.022005081176757812s
+INFO:root:Processador de Consultas - Foram lidas 100 consultas
+INFO:root:Processador de Consultas - Consultas processadas com sucesso em 0.037004947662353516s
+INFO:root:Gerador de Lista Invertida - Início
+INFO:root:Gerador de Lista Invertida - Arquivos de configuração lidos
+INFO:root:Gerador de Lista Invertida - Dados lidos em 0.1940462589263916s
+INFO:root:Gerador de Lista Invertida - Foram lidos 1240 records
+INFO:root:Gerador de Lista Invertida - Lista Invertida processadas com sucesso em 4.816047668457031s
+INFO:root:Gerador do Modelo - Início
+INFO:root:Gerador do Modelo - Arquivos de configuração lidos
+INFO:root:Gerador do Modelo - Dados lidos em 0.03641366958618164s
